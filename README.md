@@ -51,3 +51,8 @@ conda create -n NCBIcatcher
 conda activate NCBIcatcher
 pip install -r requirement.txt
 ```
+### 2. To install driver
+Since Selenium technology requires downloading Google Chrome drivers, I wrote a program to download the driver
+```bash
+python getweb.py
+```
