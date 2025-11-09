@@ -2,7 +2,7 @@
 ## introduction
 This is a script that enables batch downloading of protein sequences encoded by index terms from the NCBI website.
 At my Professor's request, I needed to search for or download all protein-coding data associated with specific keywords on the NCBI website (https://www.ncbi.nlm.nih.gov/). To automate this process and free up my hands, I employed automation technology (Selenium) to perform the downloads.
-## Run on
+## Dependencies
 ```test
 attrs==25.4.0
 beautifulsoup4==4.14.2
@@ -39,3 +39,15 @@ urllib3==2.5.0
 webdriver-manager==4.0.2
 websocket-client==1.9.0
 wsproto==1.2.0
+```
+## installation
+1.to install environment:
+```bash
+pip install -r requirement.txt
+```
+If a virtual environment (Anaconda) is available：
+```bash
+conda create -n NCBIcatcher
+conda activate NCBIcatcher
+pip install -r requirement.txt
+```
