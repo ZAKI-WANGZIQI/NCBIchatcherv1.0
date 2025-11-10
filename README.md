@@ -56,3 +56,16 @@ Since Selenium technology requires downloading Google Chrome drivers, I wrote a 
 ```bash
 python getweb.py
 ```
+After downloading the driver, you need to note the location where the driver was downloaded.
+### 3. To download your data:
+Open NCBI_catcher.py and examine the configuration section at the beginning of the file.
+```python
+SEARCH_TERMS = [
+    " SARS-CoV-2 complete genome",  # 新型冠状病毒全基因组
+]
+BASE_DOWNLOAD_DIR = "./ncbi_fasta_downloads"
+HEADLESS_MODE = False  # 设置为False可以看到浏览器操作
+MAX_PAGES = 285  # 最大下载页数，防止无限循环
+ENABLE_RESUME = True  # 启用断点续传
+```
+You can configure your desired search settings. Click Run, and the program will automatically open your browser and initiate the download.
