@@ -58,7 +58,7 @@ python getweb.py
 ```
 After downloading the driver, you need to note the location where the driver was downloaded.
 ### 3. To download your data:
-Open NCBI_catcher.py and examine the configuration section at the beginning of the file.
+Open NCBIcatcherv1.0.py and examine the configuration section at the beginning of the file.
 ```python
 SEARCH_TERMS = [
     " SARS-CoV-2 complete genome",  # 新型冠状病毒全基因组
